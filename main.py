@@ -24,11 +24,11 @@ def categorize_color(r, g, b):
         return "orange"
     
     # yellow (high red and green, low blue)
-    elif r > 150 and g > 150 and b < 100:
+    elif r > 150 and g > 150 and b < 150:
         return "yellow"
     
     # green (higher green, low red and blue)
-    elif g > 120 and r < 80 and b < 80:
+    elif g > 180 and r < 150 and b < 150:
         return "green"
     
     # blue (high blue, low red and green)

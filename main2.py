@@ -23,13 +23,13 @@ def categorize_color(h, s, v):
     elif h > 10 and h < 30 and s > 100:
         return "orange"
     
-    # yellow (hue around 30 to 60 degrees)
-    elif h > 30 and h < 60 and s > 100:
-        return "yellow"
-    
     # green (hue around 40 to 90 degrees, higher saturation)
-    elif h > 40 and h < 90 and s > 100 and v > 50:
+    elif h >= 35 and h <= 90 and s < 200 and v > 180:
         return "green"
+    
+    # yellow (hue around 30 to 60 degrees)
+    elif h >= 25 and h <= 50 and s < 200:
+        return "yellow"
     
     # blue (hue around 100 to 140 degrees, higher saturation)
     elif h > 100 and h < 140 and s > 100 and v > 50:
